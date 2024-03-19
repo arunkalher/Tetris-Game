@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Fill Game</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="application-name" content="Box Fill Game">
+    <meta name="author" content="Arun Kalher">
+    <meta name="keywords" content="game,box fill game,box fill">
+    <meta name="copyright" content="2024 Arun Kalher">
+</head>
+
+<body>
+    <section id="instructions">
+        <div id="ins_wrap">
+            <p>
+                <span id="h1">Instructions : </span><br /><br />
+                1. Use -> and <- for left and right movement respectively. <br />
+                2. Use SpaceBar in PC or rotate button for rotation. <br />
+                3. Speed X means movement in .3 s.<br />
+                3. Click on Start to start the game.
+
+            </p>
+            <span id="cross">X</span>
+        </div>
+
+    </section>
+    <section id="game-wrapper">
+        <section id="button-wrap">
+            <button class="butt" id="but">Start</button>
+            <button class="butt" id="but1">Instructions</button>
+        </section>
+        <section id="radio-buttons">
+            <div><input type="radio" name="Radio" id="radio1">
+                <label for="radio1">X</label>
+            </div>
+
+            <div><input type="radio" name="Radio" id="radio2" checked="checked">
+                <label for="radio2">2X</label>
+            </div>
+            <div><input type="radio" name="Radio" id="radio3">
+                <label for="radio3">3X</label>
+            </div>
+
+        </section>
+        <section id="score-wrapper">
+            <span id="score"> Score : 0</span>
+
+        </section>
+        <section id="game-box">
+
+        </section>
+
+    </section>
+    <div id="buttons-wrap">
+        <div class="left-right" id="left">
+            <= </div>
+                <div class="left-right" id="rotate">
+                    <img id="im" src="./img/rotate.jpg" alt="Rotate">
+                </div>
+                <div class="left-right" id="right">
+                    =>
+                </div>
+        </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

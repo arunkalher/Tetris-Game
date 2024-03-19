@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+  background-color: skyblue;
+}
+
+#game-box {
+
+  background-color: rgb(194, 233, 248);
+  width: 80vw;
+  height: 25rem;
+  max-width: 30rem;
+  margin: 2rem auto;
+  border-right: 1rem solid steelblue;
+  border-left: 1rem solid steelblue;
+  border-bottom: 1rem solid steelblue;
+  border-radius: 0 0 .4rem .4rem;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  max-height: 70vh;
+
+}
+
+.box {
+  border: .1rem solid white;
+}
+
+.butt {
+  margin: 1.3rem auto;
+
+  font-size: 1.4rem;
+  padding: .2rem;
+  border: none;
+  background: none;
+  background-color: steelblue;
+  color: white;
+  border: .1rem solid white;
+  border-radius: .4rem;
+  cursor: pointer;
+
+}
+
+#button-wrap {
+  width: 20rem;
+  max-width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#but {
+  width: 7rem;
+}
+
+#but1 {
+  width: 10rem;
+}
+
+.butt:hover {
+  background-color: white;
+  color: steelblue;
+  border-color: steelblue;
+}
+
+#score-wrapper {
+  margin: 1rem auto;
+  display: grid;
+  align-items: center;
+}
+
+#score {
+  margin: .1rem auto;
+  text-align: center;
+  background-color: steelblue;
+  color: white;
+  font-size: 1.4rem;
+  padding: .7rem;
+
+  border: .1rem solid white;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+#buttons-wrap {
+  position: absolute;
+  width: 90vw;
+  align-items: stretch;
+  height: 10vh;
+  z-index: 2;
+  display: grid;
+  display: none;
+  top: 80vh;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  left: 5vw;
+
+
+}
+
+.left-right {
+  font-size: 3rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: skyblue;
+  opacity: 0.3;
+  border-radius: 1rem;
+
+}
+
+img {
+  width: 20vw;
+  height: 10vh;
+
+}
+
+#rotate {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+@media (max-height:400px) {
+
+  #buttons-wrap {
+    display: grid;
+    height: 20vh;
+    width: 60vw;
+    left: 20vw;
+
+  }
+}
+
+@media (max-width:500px) {
+
+  #buttons-wrap {
+    display: grid;
+    height: 10vh;
+  }
+}
+
+#instructions {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  max-width: 90vw;
+  top: 0;
+  display: none;
+  text-shadow: .06rem .06rem .06rem black;
+
+
+}
+
+#ins_wrap {
+  display: flex;
+  background-color: white;
+  margin: 30vh auto;
+  width: 20rem;
+  max-width: 80vw;
+  color: steelblue;
+  font-size: 1.3rem;
+  padding: .2rem .3rem 1rem .5rem;
+  background-color: white;
+  border: .1rem solid black;
+  border-radius: .4rem;
+  box-shadow: 0.1rem .1rem .1rem .1rem black;
+}
+
+p {
+  flex-basis: 95%;
+  margin-top: 3rem;
+  margin-left: .3rem;
+}
+
+#cross {
+  color: black;
+  text-align: center;
+  background-color: steelblue;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: .4rem;
+  border: .2rem solid white;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+#cross:hover {
+  background-color: white;
+  color: steelblue;
+  border-color: steelblue;
+}
+
+#score {
+  width: auto;
+  height: 2.5rem;
+  text-align: center;
+  display: grid;
+  align-content: center;
+}
+
+#h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: black;
+}
+
+button {
+  text-shadow: .06rem .06rem .06rem black;
+
+}
+
+#radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  max-width: 90vw;
+  margin: auto;
+  flex-wrap: wrap;
+
+
+}
+
+label {
+  padding: .4rem;
+  font-size: 1.5rem;
+  background-color: steelblue;
+  color: white;
+  border-radius: .4rem;
+  width: 4rem;
+  display: inline-block;
+  text-align: center;
+  margin: .4rem;
+  border: .1rem solid white;
+  cursor: pointer;
+  text-shadow: .06rem .06rem .06rem black;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+label:hover {
+  background-color: white;
+  color: steelblue;
+  border-color: steelblue;
+}
